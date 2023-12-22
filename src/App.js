@@ -10,22 +10,22 @@ import {FeedbackProvider} from './context/FeedbackContext'
 function App() {
   return (
     <FeedbackProvider>
-    <Router>
-      <Header />
-      <div className='container'>
-        <Routes>
-          <Route exact path='/' element={
-            <>
-              <FeedbackForm />
-              <FeedbackStats />
-              <FeedbackList />
-            </>
-          }> </Route>
-          <Route path='/about' element={<AboutPage />} />
-        </Routes>
-        <AboutIconLink />
-      </div>
-    </Router>
+      <Router>
+        <Header />
+        <div className='container'>
+          <Routes>
+            <Route exact path='/' element={
+              <>
+                <FeedbackForm />
+                <FeedbackStats />
+                <FeedbackList />
+              </>
+            }> </Route>
+            <Route path='/about' element={<AboutPage />} />
+          </Routes>
+          <AboutIconLink />
+        </div>
+      </Router>
     </FeedbackProvider>
   )
 }
